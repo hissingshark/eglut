@@ -28,7 +28,12 @@
 
 #include "EGL/egl.h"
 #include "eglut.h"
-#include "eglut_x11.h"
+
+#ifdef EGLUT_USE_FB
+#include <eglut_fb.h>
+#else
+#include <eglut_x11.h>
+#endif
 
 struct eglut_window {
     EGLConfig config;

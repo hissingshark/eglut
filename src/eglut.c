@@ -36,7 +36,8 @@
 
 #include "eglutint.h"
 
-#include "xinput.h"
+// not required even conditionally here
+//#include "xinput.h"
 
 static struct eglut_state _eglut_state = {
         .api_mask = EGLUT_OPENGL_ES1_BIT,
